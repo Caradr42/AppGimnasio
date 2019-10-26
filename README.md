@@ -1,6 +1,6 @@
 # README
 
-install Ruby version: 2.6.4
+install Ruby version: 2.6.4 and rails version 6.0.0
 chech if ruby, rails, sqlite3, and yarn are installed
 
 ```
