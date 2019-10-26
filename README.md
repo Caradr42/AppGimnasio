@@ -25,7 +25,7 @@ gem install sqlite3-ruby
 
 execuute the rails server: 
 ```
-rails start
+rails server
 ```
 if webpacker fails to execute install it:
 ```
