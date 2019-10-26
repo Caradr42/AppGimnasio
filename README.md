@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+install Ruby version: 2.6.4
+chech if ruby, rails, sqlite3, and yarn are installed
 
-Things you may want to cover:
+```
+ruby --version
+rails --version
+sqlite3 --version
+yarn --version
+gem --version
+```
+if yarn is not intsalled dowwnload from here: https://yarnpkg.com/lang/en/docs/install/#windows-stable
 
-* Ruby version
+then execute
+```
+bundle install
+```
+to install all the required gems
 
-* System dependencies
+if sqlite3 fails install the sqlite1.4
+```
+gem install sqlite3-ruby
+````
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+execuute the rails server: 
+```
+rails start
+```
+if webpacker fails to execute install it:
+```
+rails  webpacker:install
+```
