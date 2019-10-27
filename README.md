@@ -32,8 +32,15 @@ yarn --version
 gem --version
 
 
-Last,
+Download the github project:
+
+execute this command inside the project folder
+
+```
+gem install bundler
+```
+
 execute inside the proyect file
 ```
-bundle install
+bundler install
 ```
