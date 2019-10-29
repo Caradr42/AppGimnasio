@@ -1,0 +1,34 @@
+<div class="sidebar">
+  <a href="actividades">Actividades</a>
+  <a href="consulta">Consulta</a>
+  <a href="admin">Administrador</a>
+</div>
+
+<div class="content">
+	<h1>Admin</h1>
+	<p>Crear Actividad</p>
+
+	<%= form_for :actividad, url: admin_path do |f| %>
+	<p>
+		<%= f.label :nombre %><br>
+		<%= f.text_field :nombre %>
+	</p>
+	<p>
+		<%= f.label :hora_Inicio %><br>
+		<%= f.time_field :hora_Inicio %>
+	</p>
+	<p>
+		<%= f.label :hora_Fin %><br>
+		<%= f.time_field :hora_Fin %>
+	</p>
+	<p>
+		<%= f.label :profesor %><br>
+		<%= f.text_field :profesor %>
+	</p>
+
+	<p>
+		<%= f.submit %>
+	</p>
+	<% end %>
+</div>
+

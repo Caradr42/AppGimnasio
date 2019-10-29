@@ -1,0 +1,44 @@
+// Place all the styles related to the Actividades controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+/*TABLE*/
+/* Style the table */
+table {
+  /*margin: auto;*/
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  position: relative;	
+  top: 45%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+/* Style table headers and table data */
+th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+/* Zebra-striped table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
