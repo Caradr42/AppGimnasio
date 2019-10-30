@@ -1,24 +1,46 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. install Ruby version: 2.6.4 / 2.6.5 with devkit here is the link:
+https://rubyinstaller.org/
 
-Things you may want to cover:
+2. install rails version 6.0.0
+Execute this command in your cmd:
+```
+gem install rails
+```
+3.Install yarn:
+Download from here: https://yarnpkg.com/lang/en/docs/install/#windows-stable
 
-* Ruby version
+4.Install sqlite3, execute this command in your cmd:
+```
+gem install sqlite3 -v '1.4.1'
+````
+5. Execute the rails server: 
+```
+rails server
+```
+  if webpacker fails to execute install it (use this command):
+```
+rails  webpacker:install
+```
+Check versions:
 
-* System dependencies
+ruby --version
+rails --version
+sqlite3 --version
+yarn --version
+gem --version
 
-* Configuration
 
-* Database creation
+Download the github project:
 
-* Database initialization
+execute this command inside the project folder
 
-* How to run the test suite
+```
+gem install bundler
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+execute inside the proyect file
+```
+bundler install
+```
