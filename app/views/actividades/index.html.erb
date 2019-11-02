@@ -10,7 +10,9 @@
 	
 	 <table class="acts">
 		<tr>
-		    <th style="width:50%">Acctividad</th>
+		    <th style="width:50%">Actividad</th>
+		    <th>Dia</th>
+		    <th>Capacidad</th>
 		    <th>Inicio</th>
 		    <th>Fin</th>
 		    <th>Maestro</th>
@@ -19,6 +21,8 @@
 		<% for c in @listaActividades %>
 		<tr>
 			<th><%= c.nombre %></th>
+			<td><%= c.dia %></td>
+			<th><%= c.capacidad %></th>
 			<td><%= c.horaInicio %></td>
 			<td><%= c.horaFin %></td>
 			<td><%= c.profesor %></td>
