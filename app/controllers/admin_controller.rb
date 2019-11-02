@@ -1,10 +1,10 @@
 class AdminController < ApplicationController
 
-	DAYS =["Lunes","Martes","Miercoles","Jueves","Viernes"]
-	PROF = ["Pancho","Pacco","Pepe","Pedro"]
+	# DAYS =["Lunes","Martes","Miercoles","Jueves","Viernes"]
+	# PROF = ["Pancho","Pacco","Pepe","Pedro"]
 
 	def administrador
-		@prof == PROF
+		
 	end
 
 	def create

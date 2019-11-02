@@ -4,6 +4,7 @@
   <a href="admin">Administrador</a>
 </div>
 
+
 <div class="content">
 	<h1>Admin</h1>
 	<p>Crear Actividad</p>
@@ -21,6 +22,22 @@
 		<%= f.label :hora_Fin %><br>
 		<%= f.time_field :hora_Fin %>
 	</p>
+	<table>
+		<tr>
+			<th><%= f.label :Lu %></th>
+			<th><%= f.label :Ma %></th>
+			<th><%= f.label :Mi %></th>
+			<th><%= f.label :Ju %></th>
+			<th><%= f.label :Vi %></th>
+		</tr>
+		<tr>
+			<th><%= f.check_box :Lu %></th> 
+			<td><%= f.check_box :Ma %></td>
+			<td><%= f.check_box :Mi %></td>
+			<td><%= f.check_box :Ju %></td>
+			<td><%= f.check_box :Vi %></td> 
+		</tr>
+	</table>
 	<p>
 		<%= f.label :profesor %><br>
 		<%= f.text_field :profesor %>

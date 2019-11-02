@@ -13,13 +13,17 @@ class ApplicationController < ActionController::Base
 	end
 
 	class Actividad
-		attr_accessor :nombre, :horaInicio, :horaFin, :dias, :profesor
+		attr_accessor :nombre, :horaInicio, :horaFin, :Lu, :Ma, :Mi, :Ju, :Vi, :profesor
 		def initialize(nombre, horaInicio, horaFin, dias, profesor)
-			@self.nombre = nombre
-			@self.horaInicio = horaInicio
-			@self.horaFin = horaFin
-			@self.dias = dias
-			@self.profesor = profesor
+			@nombre = nombre
+			@horaInicio = horaInicio
+			@horaFin = horaFin
+			@Lu = Lu
+			@Ma = Ma
+			@Mi = Mi
+			@Ju = Ju
+			@Vi = Vi
+			@profesor = profesor
 		end
 	end
 end
