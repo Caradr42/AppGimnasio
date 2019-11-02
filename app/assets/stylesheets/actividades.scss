@@ -22,6 +22,18 @@
     transform: translateX(-50%);
 }
 
+.acts input[type=submit] {
+    background-color: #1800F3;
+    border: 0;
+    color: white;
+}
+
+.acts input[type=submit]:hover {
+    background-color: white;
+    color: #1800F3;
+    cursor: pointer;
+}
+
 
 /* Style table headers and table data */
 

@@ -6,9 +6,7 @@
 </div>
 
 <div class="form">
-	<h1>Administrador</h1>
-	<p>Crear Actividad</p>
-
+	<h3>Crear Actividad</h3>
 	<%= form_for :actividad, url: admin_path do |f| %>
 	<p>
 		<%= f.label :nombre %><br>
@@ -47,12 +45,12 @@
 		<%= f.number_field :capacidad %>
 	</p>
 	<p>
-		<%= f.submit %>
+		<%= f.submit "Registrar" %>
 	</p>
 	<% end %>
 </div>
 
-<div class="contentAdmin	">
+<div class="contentAdmin">
 	 <table class="acts">
 		<tr>
 		    <th style="width:50%">Actividad</th>
