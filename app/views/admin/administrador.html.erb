@@ -16,11 +16,11 @@
 	</p>
 	<p>
 		<%= f.label :hora_Inicio %><br>
-		<%= f.time_field :hora_Inicio %>
+		<%= f.time_field :horaInicio %>
 	</p>
 	<p>
 		<%= f.label :hora_Fin %><br>
-		<%= f.time_field :hora_Fin %>
+		<%= f.time_field :horaFin %>
 	</p>
 	<table>
 		<tr>
@@ -42,7 +42,10 @@
 		<%= f.label :profesor %><br>
 		<%= f.text_field :profesor %>
 	</p>
-
+	<p>
+		<%= f.label :capacidad %><br>
+		<%= f.number_field :capacidad %>
+	</p>
 	<p>
 		<%= f.submit %>
 	</p>
@@ -51,30 +54,32 @@
 
 <div class="contentAdmin	">
 	 <table class="acts">
-		<% for c in @acts %>
 		<tr>
-		    <th style="width:50%">Acctividad</th>
+		    <th style="width:50%">Actividad</th>
+		    <th>Capacidad</th>
 		    <th>Inicio</th>
 		    <th>Fin</th>
 		    <th>Maestro</th>
-		    <th>Dias</th>
-		    <th></th>
-		    <th></th>
-		    <th></th>
-		    <th></th>
+		    <th>Lu</th>
+		    <th>Ma</th>
+		    <th>Mi</th>
+		    <th>Ju</th>
+		    <th>Vi</th>
 		</tr>
+		<% for c in @acts %>
 		<tr>
 			<th><%= c.nombre %></th>
-			<th><%= c.horaInicio %></th>
-			<th><%= c.horaFin %></th>
-			<th><%= c.profesor %></th>
-			<th><%= c.lu %></th>
-			<th><%= c.ma %></th>
-			<th><%= c.mi %></th>
-			<th><%= c.ju %></th>
-			<th><%= c.vi %></th>
-
+			<td><%= c.capacidad %></td>
+			<td><%= c.horaInicio %></td>
+			<td><%= c.horaFin %></td>
+			<td><%= c.profesor %></td>
+			<td><%= c.lu %></td>
+			<td><%= c.ma %></td>
+			<td><%= c.mi %></td>
+			<td><%= c.ju %></td>
+			<td><%= c.vi %></td>
 		</tr>
+
 	 	<% end %>
 	</table>
 </div>
