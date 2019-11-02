@@ -11,8 +11,16 @@ class ActividadesController < ApplicationController
 	def create	
 		found = $clases.detect {|c| c.id == params[:cla].to_f}
 
-		found.add($studentID)
-		$misClases.push(found.id)
+		existing = $misClases.detect {|c| c.id == params[:cla].to_f}
+
+		puts "========================"
+		puts existing.inspect
+
+		if !existing.present?
+			found.add($studentID)
+			$misClases.push(found)
+		end	
+
 		
 		#print params[:cla]
 		redirect_to :actividades => 'actividades'
