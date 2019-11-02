@@ -4,8 +4,7 @@
   <a href="admin">Administrador</a>
 </div>
 
-
-<div class="content">
+<div class="form">
 	<h1>Admin</h1>
 	<p>Crear Actividad</p>
 
@@ -49,3 +48,32 @@
 	<% end %>
 </div>
 
+<div class="contentAdmin	">
+	 <table class="acts">
+		<% for c in @acts %>
+		<tr>
+		    <th style="width:50%">Acctividad</th>
+		    <th>Inicio</th>
+		    <th>Fin</th>
+		    <th>Maestro</th>
+		    <th>Dias</th>
+		    <th></th>
+		    <th></th>
+		    <th></th>
+		    <th></th>
+		</tr>
+		<tr>
+			<th><%= c.nombre %></th>
+			<th><%= c.horaInicio %></th>
+			<th><%= c.horaFin %></th>
+			<th><%= c.profesor %></th>
+			<th><%= c.lu %></th>
+			<th><%= c.ma %></th>
+			<th><%= c.mi %></th>
+			<th><%= c.ju %></th>
+			<th><%= c.vi %></th>
+
+		</tr>
+	 	<% end %>
+	</table>
+</div>

@@ -1,3 +1,22 @@
 // Place all the styles related to the Admin controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.form {
+  /*position: relative;*/
+  margin: 0;
+  padding: 1px 16px;
+  margin-left: 200px;
+  position: fixed;
+  /*height: 1000px;*/
+  width: 230px;
+}
+
+div.contentAdmin {
+  position: relative;
+  margin-left: 500px;
+  
+
+  /*height: 1000px;*/
+  height:100%;
+}
