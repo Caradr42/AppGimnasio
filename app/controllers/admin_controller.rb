@@ -23,7 +23,7 @@ class AdminController < ApplicationController
 			daysList.push("Jueves")
 		end
 		if params[:actividad]["Vi"] == '1'
-			daysList.push("Vieres")
+			daysList.push("Viernes")
 		end
 
 

@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'admin' => 'admin#administrador'
 
   resources :admin
+  resources :actividades
 end

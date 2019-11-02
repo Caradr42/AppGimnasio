@@ -3,9 +3,17 @@ class ApplicationController < ActionController::Base
 	#			Clase.new("Cintas","2:30","3:15","15 nov","Juan","true")
 	$clases	= []
 	$actividades = []
+	$studentID = "A00823198"
+	$id_Clases = 0;
+	$misClases = []
 
 	class Clase
-		attr_accessor :nombre, :horaInicio, :horaFin, :dia, :profesor, :activa, :capacidad, :activityIndex
+
+		def add(value)
+		   @students.push(value)
+		end
+
+		attr_accessor :nombre, :horaInicio, :horaFin, :dia, :profesor, :activa, :capacidad, :activityIndex, :students, :id
 
 		def initialize(nombre, horaInicio, horaFin, dia, profesor, activa, capacidad, activityIndex)
 			@nombre = nombre
@@ -16,8 +24,12 @@ class ApplicationController < ActionController::Base
 			@activa = activa
 			@capacidad = capacidad
 			@activityIndex = activityIndex
+			@students = []
+			@id = $id_Clases;
+			$id_Clases = $id_Clases + 1
 		end
 
+		
 		# @@clases = []
 
 		# def clases

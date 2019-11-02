@@ -18,7 +18,9 @@
 		    <th>Fin</th>
 		    <th>Maestro</th>
 		    <th>Disponibilidad</th>
+		    <th></th>
 		</tr>
+
 		<% for c in @listaActividades %>
 		<tr>
 			<th><%= c.nombre %></th>
@@ -28,6 +30,7 @@
 			<td><%= c.horaFin %></td>
 			<td><%= c.profesor %></td>
 			<td><%= c.activa %></td>
+			<td><%= button_to "+", action: 'create', params: {cla: c.id} %></td>
 		</tr>
 	 	<% end %>
 	</table>
