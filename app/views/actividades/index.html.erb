@@ -1,3 +1,4 @@
+
 <!-- The sidebar -->
 <div class="sidebar">
 	<p>Gym Tec</p>
@@ -30,8 +31,34 @@
 			<td><%= c.horaFin %></td>
 			<td><%= c.profesor %></td>
 			<td><%= c.activa %></td>
-			<td><%= button_to "+", action: 'create', params: {cla: c.id} %></td>
+			<!-- <td><%= button_to "+", action: 'create', params: {cla: c.id} %></td> -->
+			<td><button onclick="add()">+</button></td>
 		</tr>
 	 	<% end %>
 	</table>
+
+	<script>
+		function add() {
+			swal({
+                title: "Inscripcion",
+                text: "Se quiere registrar a esta actividad?",
+                type: "warning",
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+                confirmButtonClass: 'btn-danger',
+                confirmButtonText: 'Acceptar',
+                cancelButtonText: "Cancelar",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            },
+            function (isConfirm) {
+                if (isConfirm) {
+                    // Call your delete item function here.
+                    swal("Inscrito!", "Te as registrado correctamente a esta actividad", "success");
+                } else {
+                swal("Cancelado", "No se registro a esta actividad", "error");
+                }
+            });
+		}
+	</script>
 </div>
